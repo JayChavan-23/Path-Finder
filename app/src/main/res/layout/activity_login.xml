@@ -2,41 +2,69 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/login"
+    android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
 
     <EditText
-        android:id="@+id/easeIn"
-        android:layout_width="291dp"
-        android:layout_height="45dp"
+        android:id="@+id/email"
+        android:layout_width="269dp"
+        android:layout_height="50dp"
         android:layout_marginTop="180dp"
+        android:background="@drawable/et_style"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="6dp"
+        android:textColorHint="#3B3B3B"
         android:hint="Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/password_toggle"
-        android:layout_width="291dp"
-        android:layout_height="45dp"
+        android:id="@+id/password"
+        android:layout_width="269dp"
+        android:layout_height="50dp"
         android:layout_marginTop="35dp"
-        android:hint="password"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="6dp"
+        android:textColorHint="#3B3B3B"
+        android:background="@drawable/et_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/easeIn" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="154dp"
         android:layout_height="45dp"
         android:layout_marginTop="36dp"
-        android:backgroundTint="#00D2BE"
+        android:backgroundTint="#00acee"
         android:text="signin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_toggle" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="53dp"
+        android:background="#0047AB	"
+
+        android:layout_marginRight="53dp"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.076">
+
+        <ImageView
+            android:layout_marginLeft="50dp"
+            android:id="@+id/google_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/google"/>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PathFinder/app/src/main/res/drawable/et_style.xml" value="0.297" />
+        <entry key="..\:/PathFinder/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.298" />
+        <entry key="..\:/PathFinder/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.298" />
         <entry key="..\:/PathFinder/app/src/main/res/layout/activity_login.xml" value="0.33" />
       </map>
     </option>
