@@ -31,6 +31,12 @@ public class Login extends AppCompatActivity {
         gso  = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc  = GoogleSignIn.getClient(this,gso);
 
+        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+        if(account!=null){
+            navigateToSecondActivity();
+        }
+
+
          googleBtn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
@@ -58,6 +64,7 @@ public class Login extends AppCompatActivity {
         }
     }
     void navigateToSecondActivity(){
+        finish();
         Intent intent = new Intent(Login.this,MainActivity.class);
         startActivity(intent);
     }
